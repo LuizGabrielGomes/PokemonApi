@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: comic sans, sans-serif;
+}
+
+body {
+    margin: 10px;
+
+}
+
+
+
+.item-atribute {
+    list-style: none;
+
+}
+
+.image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+    height: 200px;
+}
+
+
+.card {
+    background-color: rgb(234, 232, 232);
+    width: 250px;
+    padding: 20px;
+    height: 350px;
+    border: 13px solid #C7D1CF;
+    border-radius: 5px;
+
+}
+
+.frame {
+    border: 3px solid #F7F7F7;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: inset 0 0 1px black;
+}
