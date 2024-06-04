@@ -1,11 +1,33 @@
+let pokemonNumber = prompt("pokemon name");
+console.log(pokemonNumber)
+// criar uma funcao que aceite um numero de 0 ate 1025 se for maior que 1025 dar falso se nao true
+
+
+
+
+function limitNumber(number){
+    return   number <= 1025 
+
+}
+
+    const result = limitNumber(pokemonNumber)
+    console.log(result)
+
+    if (pokemonNumber > 1025){
+        alert("you typed a number more than 1025")
+    }
+   
+
+
+
+
 // async / await 
 // async = assincrono. serve para dizer para o javascript que os outros codigos devem continuar carregando enquanto a chamada para a api e realizada
 // await = esperar. serve para dizer para o javascript que ele deve "esperar" a resposta da chamada 
-
 const getPokemon = async () => {
     // arrowFunction (funcao anonima)
     // chama a as informacoes do api do pokemon//     
-    const pokemon = await fetch("https://pokeapi.co/api/v2/pokemon/151").then(response => response.json())
+    const pokemon = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonNumber}`).then(response => response.json())
     console.log(pokemon)    
 
     //chama a funcao createPokemonCard passando as informacoes do pokemon da linha 8
@@ -75,3 +97,5 @@ function createPokemonCard(pokemon) {
     pokemonCards.appendChild(li5)
 
 }
+
+    
