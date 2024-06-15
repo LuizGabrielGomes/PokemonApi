@@ -1,4 +1,4 @@
-let pokemonNumber = prompt("pokemon name");
+let pokemonNumber = prompt("type a number between 0 to 1025");
 console.log(pokemonNumber)
 // criar uma funcao que aceite um numero de 0 ate 1025 se for maior que 1025 dar falso se nao true
 
